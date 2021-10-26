@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    padding: 36px 30px 0px 30px;
+    &-container {
+        width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list-menu {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        a {
+            text-decoration: none;
+            position: relative;
+            &::after {
+                content: '';
+                height: 3px;
+                width: 0;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                transition: all 0.2s linear;   
+            }
+            &:hover::after {
+                background-color: red;
+                width: 100%;
+            }
+        }
+        .menu-item {
+            &:not(:last-child) {
+                padding-right: 40px;
+                a {
+                    color: #4B4F51;
+                }
+            }
+        }
+        .menu-type {
+            border: 2px solid #FB4C47;
+            border-radius: 46px;
+            padding: 16px 45px 16px 45px;
+            a {
+                color: #FF383D;
+            }
+        }
+    }
+}

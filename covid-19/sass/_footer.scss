@@ -1,0 +1,38 @@
+.footer {
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li a {
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 28px;
+      color: #00402E;
+      margin-right: 55px;
+    }
+  }
+  &__list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin-right: 40px;
+    }
+  }
+  &__copy-right {
+    font-size: 23px;
+    line-height: 28px;
+    color: #415E56;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
